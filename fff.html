@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0"/>
+        <title>ELTIT</title>
+        <link rel="stylesheet" href="ggg.css"/>
+        <meta name="registration_form" content="Registration form for Knights of the Round Table" />
+        <meta name="description" content="Free Web tutorials">
+        <script src="hhh.js" defer></script>
+    </head>
+    <body>
+            <form class="formulario">
+        <!-- Titulo -->
+        <h1 class="formulario__titulo">Inscripción al Club de Magia Moderna 🪄</h1>
+        <!-- Grupo nombre -->
+        <fieldset class="formulario__grupo">
+            <legend><label for="nombre" class="formulario__grupo__label">Nombre mágico: </label></legend>
+            <input type="text" id="nombre" name="nombre" class="formulario__grupo__input" required/>
+        </fieldset>
+        <!-- Grupo correo -->
+        <fieldset class="formulario__grupo">
+            <legend><label for="correo" class="formulario__grupo__label">Correo encantado: </label></legend>
+            <input type="email" id="correo" name="correo" class="formulario__grupo__input" required/>
+        </fieldset>
+        <!-- Grupo tipos -->
+        <fieldset class="formulario__grupo">
+            <legend><label for="tipo" class="formulario__grupo__label">Tipo de magia preferida: </label></legend>
+            <select id="tipo" id="tipo" name="tipo" class="formulario__grupo__select" required>
+                <option value="" disabled selected>Elige tu magia</option>
+                <option value="pociones">Pociones</option>
+                <option value="hechizos">Hechizos</option>
+                <option value="magia blanca">Magia blanca</option>
+                <option value="magia negra">Magia negra</option>
+                <option value="curacion">Curación</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+        <!-- Grupo varita -->
+        <fieldset class="formulario__grupo">
+            <legend><label for="varita" class="formulario__grupo__label">¿Tienes varita? 🧙‍♂️</label></legend>
+            <input type="radio" id="varita" name="varita" value="si" class="formulario__grupo__input" required> Sí
+            <input type="radio" id="varita" name="varita" value="no" class="formulario__grupo__input" required> No
+        </fieldset>
+        <!-- Grupo normas -->
+        <fieldset class="formulario__grupo">
+            <input type="checkbox" id="normas" name="normas" class="formulario__grupo__input" required>
+            <label for="normas" class="formulario__grupo__label">Acepto las normas del Grimorio 📋</label>
+        </fieldset>
+        <!-- Grupo comentario -->
+        <fieldset class="formulario__grupo">
+            <legend><label for="comentario" class="formulario__grupo__label">Comentarios adicionales: </label></legend>
+            <textarea placeholder="Me gusta la magia porque..." id="comentario" name="comentario" class="formulario__grupo__textarea" rows="5" cols="30"></textarea>
+        </fieldset>
+        <!-- Boton submit -->
+        <div class="formulario__boton--glitter">
+             <button type="submit" name="boton-subir" class="formulario__boton--glitter">Unirme al club ✨</button>
+        </div>
+    </form>
+
+
+    </body>
+</html>

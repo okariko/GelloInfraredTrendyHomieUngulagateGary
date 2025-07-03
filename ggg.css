@@ -1,0 +1,145 @@
+* {
+    font-size: 10;
+}
+
+body {
+    background-image:url(Hogwarts.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.formulario {
+    background-color:green;
+    border-radius: 1.5rem;
+    box-shadow: 0px 5px 15px black;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+    height: max-content;
+    width: 50%;
+    border: none;
+    }
+
+.modooscuro {}
+
+/*
+}
+
+.REGISTRATIONFORM h1 {
+    color: rgb(255, 255, 255);
+    font-size: 90%;
+}
+
+
+
+
+
+
+.formulario_grupo {
+    border: none;
+    label {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="fname"] {
+        color: black;
+        width: 100%;
+        height: 25px;
+        border-radius: 0.5rem;
+        font-size: 16px;
+    }
+    select {
+        width: 100%;
+        height: 2rem;
+        border-radius: 0.5rem;
+        font-size: 16px;
+    }
+    }
+
+*/
+
+.formulario__titulo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.formulario__grupo {
+    border: none;
+}
+.formulario__grupo__label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.formulario__grupo__input {
+    color: black;
+}
+.formulario__grupo__input:focus {
+    transition: box-shadow 0.6s linear;
+}
+.formulario__grupo__input[type="text"],
+.formulario__grupo__input[type="email"] {
+    width: 100%;
+    height: 25px;
+    border-radius: 0.5rem;
+    font-size: 16px;
+}
+.formulario__grupo__select {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+.formulario__grupo__textarea {
+    border-radius: 0.5rem;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.formulario__boton--glitter {
+    position: relative;
+    background: rgb(255, 255, 30);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden; 
+    cursor: pointer;
+}
+ .formulario__boton--glitter::after { 
+    content: ''; 
+    position: absolute; 
+    top: -50%;
+    left: -50%;
+    width: 200%; 
+    height: 200%;
+    background: radial-gradient(circle, rgba(141, 56, 56, 1) 25%, transparent 10%) center/10px 10px; 
+    opacity: 0; 
+    transition: opacity 0.2s ease; 
+    pointer-events: none; 
+}
+.formulario__boton--glitter:active::after { 
+    opacity: 1; 
+    animation: glitter 1s forwards; 
+}
+@keyframes glitter {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(1.5) rotate(180deg);
+        opacity: 0; 
+    }
+}
+.formulario__boton--glitter:hover {
+    box-shadow: 0 0 10px #f7aa00, 0 0 20px #f7aa00;
+}
